@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
   // Trigger the webhook for every request with a contact_id
   if (contact_id) {
     try {
-      await axios.post('https://hooks.zapier.com/hooks/catch/14846189/3no10m7/', { contact_id });
+      await axios.post('https://hooks.zapier.com/hooks/catch/14846189/37zx5x1/', { contact_id });
       console.log(`Webhook triggered for contact_id ${contact_id}`);
     } catch (error) {
       console.error(`Failed to trigger webhook for contact_id ${contact_id}: ${error}`);
